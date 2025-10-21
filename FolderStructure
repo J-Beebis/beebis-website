@@ -1,0 +1,8 @@
+beebis-website/
+├─ index.html
+├─ css/
+│   └─ style.css
+├─ js/
+│   └─ script.js
+├─ images/
+│   └─ (any images you want to include)
