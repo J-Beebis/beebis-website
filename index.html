@@ -1,47 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beebis - Premium Cat Brand</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beebis — Redbubble Premium Artist</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Beebis</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#products">Products</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- Header / Banner Section -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>Beebis — Redbubble Premium Artist</h1>
+      <p>Original designs, art, and attitude.</p>
+      <a href="https://www.redbubble.com/people/Beebis/shop" target="_blank" class="btn">Shop All Designs</a>
+    </div>
+    <div class="banner-images">
+      <img src="https://placekitten.com/1200/500" alt="Banner 1">
+      <img src="https://placekitten.com/1201/500" alt="Banner 2">
+      <img src="https://placekitten.com/1202/500" alt="Banner 3">
+    </div>
   </header>
 
-  <section id="home">
-    <h2>Welcome to Beebis!</h2>
-    <p>Your premium cat brand destination.</p>
+  <!-- Collections Section -->
+  <section class="collections">
+    <h2>Featured Collections</h2>
+    <div class="collection-grid">
+      <div class="collection">
+        <img src="https://placekitten.com/400/300" alt="Acrylic Work">
+        <h3>Acrylic Work</h3>
+        <a href="https://www.redbubble.com/people/Beebis/shop" target="_blank" class="btn">View on Redbubble</a>
+      </div>
+      <div class="collection">
+        <img src="https://placekitten.com/401/300" alt="Beebis Portraits">
+        <h3>Beebis Portraits</h3>
+        <a href="https://www.redbubble.com/people/Beebis/shop" target="_blank" class="btn">View on Redbubble</a>
+      </div>
+      <div class="collection">
+        <img src="https://placekitten.com/402/300" alt="Vintage Beebis">
+        <h3>Vintage Beebis</h3>
+        <a href="https://www.redbubble.com/people/Beebis/shop" target="_blank" class="btn">View on Redbubble</a>
+      </div>
+      <div class="collection">
+        <img src="https://placekitten.com/403/300" alt="Be Kind">
+        <h3>Be Kind</h3>
+        <a href="https://www.redbubble.com/people/Beebis/shop" target="_blank" class="btn">View on Redbubble</a>
+      </div>
+      <div class="collection">
+        <img src="https://placekitten.com/404/300" alt="Not Today">
+        <h3>Not Today</h3>
+        <a href="https://www.redbubble.com/people/Beebis/shop" target="_blank" class="btn">View on Redbubble</a>
+      </div>
+    </div>
   </section>
 
-  <section id="products">
-    <h2>Shop Our Collection</h2>
-    <p>Check out our Redbubble store for all designs.</p>
-    <a href="https://www.redbubble.com/people/Beebis/shop?asc=u" target="_blank">Visit Store</a>
-  </section>
-
-  <section id="about">
-    <h2>About Beebis</h2>
-    <p>We make premium cat designs and products for all cat lovers.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email us at <a href="mailto:hello@beebis.com">hello@beebis.com</a></p>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Beebis. All rights reserved.</p>
+    <p>© 2025 Beebis. All Rights Reserved.</p>
+    <div class="socials">
+      <a href="https://www.redbubble.com/people/Beebis/shop" target="_blank">Redbubble</a>
+      |
+      <a href="https://instagram.com/" target="_blank">Instagram</a>
+    </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script>
+    // Simple image rotation for banner
+    const images = document.querySelectorAll('.banner-images img');
+    let index = 0;
+    setInterval(() => {
+      images.forEach((img, i) => img.style.opacity = i === index ? '1' : '0');
+      index = (index + 1) % images.length;
+    }, 4000);
+  </script>
 </body>
 </html>
